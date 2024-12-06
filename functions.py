@@ -1,0 +1,12 @@
+def operation(a,b,opp):
+    match opp:
+        case "+":
+            return float(b)+float(a)
+        case "-":
+            return float(b)-float(a)
+        case "*":
+            return float(b)*float(a)
+        case "/":
+            return float(b)/float(a)
+        case "^":
+            return pow(float(b),float(a))
