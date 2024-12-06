@@ -1,7 +1,7 @@
 import functions
 import history
 
-#add result as input
+#add result as input, maybe !
 x=input("Enter your calculation +,-,*,/,(),^\n")
 
 # PEMDAS
