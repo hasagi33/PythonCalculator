@@ -17,7 +17,9 @@ def sqrt():
     userX=input("Enter number to square root\nWrite exit to go back: ")
     if userX == "exit":
         return ["exit", "exit"]
-    return [userX,math.sqrt(float(userX))]
+    result=math.sqrt(float(userX))
+    print ("Result:",result)
+    return [userX,result]
 
 def calculate():
     # to do: add result as input, maybe !
@@ -36,7 +38,7 @@ def calculate():
     digitLength=0
 
     # not pythonic, will fix later
-    #divides expression into array with numbers and operators
+    # divides expression into array with numbers and operators
     for i in range(lenOfX):
         if x[i].isdigit() or x[i]==".":
             digitLength+=1
