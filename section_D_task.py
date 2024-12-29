@@ -14,13 +14,16 @@ while x != "4":
           "1. Perform Basic Calculation \n"
           "2. Calculate Square Root\n"
           "3. View History\n"
-          "4. Karatsuba\n"
-          "5. Exit\n")
+          "4. Exit\n")
     x = input("Choose an option:")
     match x:
         case "1":
             while True:
                 calculation_input = input("Enter your calculation +,-,*,/,(),^\nWrite exit or leave empty to go back: ")
+                # calculated = calculations.calculate(calculation_input)
+                # print("Result:", calculated[1])
+                #Enable back when fully working
+
                 try:
                     calculated = calculations.calculate(calculation_input)
                 except ZeroDivisionError:

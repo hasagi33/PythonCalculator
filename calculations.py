@@ -32,7 +32,6 @@ def calculate(calculation_input):
     if x != re.sub('[a-z]', '', x):
         raise TypeError
 
-    print(functions.remove_dot(x))
 
     expression_array = functions.string_to_list(x)
 
